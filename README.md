@@ -1,3 +1,6 @@
-idk
+NHentai Code Generator
 > Todo list
-> * Webscrap information
+> * Webscrape information
+
+
+got bored so I made this dogshit
