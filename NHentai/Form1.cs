@@ -19,7 +19,7 @@ namespace NHentai
             _client = new NHentaiClient(""); //put your user agent here https://www.whatismybrowser.com/detect/what-is-my-user-agent/
 
         }
-
+        
         private async void GenButton_Click(object sender, EventArgs e)
         {
             try
@@ -35,7 +35,10 @@ namespace NHentai
                     ThumbnailImage.Image = System.Drawing.Image.FromStream(ms);
                 }
                 _currentGalleryIndex = 1;
-                UpdatePageLabel(); 
+                vScrollBar1.Maximum = _currentBook.NumPages;
+                vScrollBar1.Value = 1;
+
+                UpdatePageLabel();
                 await DisplayGalleryThumbnailAsync();
             }
             catch (Exception ex)
@@ -43,7 +46,6 @@ namespace NHentai
                 MessageBox.Show($"Failed to fetch book details or gallery: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private async Task DisplayGalleryThumbnailAsync()
         {
             try
