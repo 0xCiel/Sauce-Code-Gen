@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Vp6a2HPlQA0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\NHentai\\NHentai\\NHentai.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\htmlagilitypack\\1.12.1\\htmlagilitypack.1.12.1.nupkg.sha512"
+  ],
+  "logs": []
+}
